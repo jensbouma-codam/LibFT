@@ -1,0 +1,5 @@
+.DS_Store
+/.vscode
+/obj
+libft.a
+a.out*
