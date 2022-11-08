@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 15:27:43 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 16:08:04 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:10:37 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
  * @param new The address of a pointer to the node to be
  * added to the list.
  */
+
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *lst;

@@ -6,18 +6,12 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 17:28:51 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:27:35 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:10:15 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-
-static t_list	*set_zero(void *buf, void (*del)(void *))
-{
-	del(buf);
-	return (0);
-}
 
 /**
  * @brief Iterates the list ’lst’ and applies the function
@@ -32,6 +26,13 @@ static t_list	*set_zero(void *buf, void (*del)(void *))
  * the content of a node if needed.
  * @return t_list* The new list. NULL if the allocation fails.
  */
+
+static t_list	*set_zero(void *buf, void (*del)(void *))
+{
+	del(buf);
+	return (0);
+}
+
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*newlst;

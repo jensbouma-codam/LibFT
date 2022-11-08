@@ -6,15 +6,15 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/05 14:52:24 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:15:14 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:19:28 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
 /**
- * @brief The strlen() function computes the length of the string s.
- * The strnlen() function attempts to compute the length of s, but never scans
+ * @brief The strlen() function computes the lenght of the string s.
+ * The strnlen() function attempts to compute the len of s, but never scans
  * beyond the first maxlen bytes of s.
  * 
  * @param s 
@@ -23,12 +23,13 @@
  * The strnlen() function returns either the same result as strlen()
  * or maxlen, whichever is smaller.
  */
+
 size_t	ft_strlen(const char *s)
 {
-	size_t	length;
+	size_t	len;
 
-	length = 0;
+	len = 0;
 	while (*s++)
-		length++;
-	return (length);
+		len++;
+	return (len);
 }

@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 13:17:43 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 11:15:21 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:20:03 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,13 @@
  * The comparison is done using unsigned characters,
  * so that `\200' is greater than `\0'.
  */
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	while (i < n)
+	while (i++ < n)
 	{
 		if ((unsigned char)*s1 != (unsigned char)*s2)
 			return ((unsigned char)*s1 - (unsigned char)*s2);
@@ -41,7 +42,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 			return (0);
 		s1++;
 		s2++;
-		i++;
 	}
 	return (0);
 }

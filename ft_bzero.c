@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/06 13:39:35 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 22:57:25 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:10:44 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
  * @param n 
  * @return void* 
  */
+
 void	*ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;

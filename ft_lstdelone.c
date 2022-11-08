@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 16:56:29 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:26:42 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:25 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
  * @param del The address of the function used to delete
  * the content.
  */
+
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	del(lst->content);

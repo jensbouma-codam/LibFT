@@ -6,18 +6,12 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/06 13:54:14 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:06:17 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:50 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-// The memcpy() function copies n bytes from memory area src to memory area dst.
-// If dst and src overlap, behavior is undefined.
-//
-// Apps in which dst and src might overlap should use memmove(3) instead.
-//
-// The memcpy() function returns the original value of dst.
 /**
  * @brief The memcpy() function copies n bytes from memory area src
  * to memory area dst.  If dst and src overlap, behavior is undefined.
@@ -28,6 +22,7 @@
  * @param n 
  * @return void* The memcpy() function returns the original value of dst.
  */
+
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;

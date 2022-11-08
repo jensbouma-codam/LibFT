@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/05 14:50:20 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:03:06 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:05 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
  * @return int The function returns zero if the character tests false
  * and returns non-zero if the character tests true.
  */
+
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

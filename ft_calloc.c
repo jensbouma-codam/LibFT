@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 17:00:12 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 22:58:59 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:10:50 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
  * @return void* If successful, calloc() return a pointer to allocated memory.
  * If there is an error, they return a NULL pointer and set errno to ENOMEM.
  */
+
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;

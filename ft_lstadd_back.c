@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 16:19:54 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 16:52:31 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:26:18 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
  * @param lst The address of a pointer to the first link ofa list.
  * @param new The address of a pointer to the node to be added to the list.
  */
+
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!*lst)

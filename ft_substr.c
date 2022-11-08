@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 17:43:41 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:18:20 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:21:56 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
  * @param len The maximum length of the substring.
  * @return char* The substring. NULL if the allocation fails.
  */
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	strlen;

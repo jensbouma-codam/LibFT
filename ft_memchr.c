@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/10 20:24:40 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:03:58 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:44 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
  * @return void* The memchr() function returns a pointer to the byte located,
  * or NULL if no such byte exists within n bytes.
  */
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	p;

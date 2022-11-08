@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/10 12:13:34 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:19:18 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:22:13 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
  * returns the corresponding lower-case letter if there is one;
  * otherwise, the argument is returned unchanged.
  */
+
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

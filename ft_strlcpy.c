@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/06 17:26:30 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:14:22 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:18:38 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@
  * If the return value is >= dstsize, the output string has been truncated.
  * It is the caller's responsibility to handle this.
  */
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t			i;

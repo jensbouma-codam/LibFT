@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 17:17:28 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 17:28:36 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:28 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
  * @param lst The address of a pointer to a node.
  * @param f The address of the function used to iterate on the list.
  */
+
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)

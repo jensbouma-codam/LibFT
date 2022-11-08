@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 19:38:57 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:17:30 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:21:27 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
  * @param set 
  * @return char* 
  */
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	end;

@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 16:12:23 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 16:19:11 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:30 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
  * @param lst The beginning of the list.
  * @return t_list* Last node of the list
  */
+
 t_list	*ft_lstlast(t_list *lst)
 {
 	while (lst && lst->next)

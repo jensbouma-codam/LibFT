@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 18:48:33 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:10:45 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:18:08 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
  * @param s2 
  * @return char* The new string. NULL if the allocation fails.
  */
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;

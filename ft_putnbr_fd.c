@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 23:37:38 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 00:45:34 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:09:45 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(((n % 10) + '0'), fd);
 	}
 }
-
-// void	ft_putnbr_fd(int n, int fd)
-// {
-// 	char		*str;
-// 	long int	longn;
-
-// 	longn = n;
-// 	str = ft_itoa(longn);
-// 	ft_putstr_fd((char *)str, fd);
-// 	free(str);
-// }

@@ -6,12 +6,23 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/17 17:09:49 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/19 19:35:16 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:14:24 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+/**
+ * @brief Allocates (with malloc(3)) and returns an array
+ * of strings obtained by splitting ’s’ using the
+ * character ’c’ as a delimiter.  The array must end
+ * with a NULL pointer.
+ * 
+ * @param s String of characters
+ * @param c Character to split string
+ * @return char**  Array of splited parts
+ */
 
 static size_t	get_len(char const *s, char c)
 {
@@ -78,18 +89,6 @@ static char	**fill_array(char **array, char *s, char c, size_t parts)
 	return (array);
 }
 
-// 
-
-/**
- * @brief Allocates (with malloc(3)) and returns an array
- * of strings obtained by splitting ’s’ using the
- * character ’c’ as a delimiter.  The array must end
- * with a NULL pointer.
- * 
- * @param s String of characters
- * @param c Character to split string
- * @return char**  Array of splited parts
- */
 char	**ft_split(char const *s, char c)
 {
 	char	**array;

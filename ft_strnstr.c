@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 14:02:45 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/19 22:44:50 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:20:29 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
  * @param len 		Max seach length
  * @return char*
  */
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*find;
@@ -48,9 +49,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-// int	main()
-// {
-// 	const char	haystack[30] = "aaabcabcd";
-// 	printf("%s", ft_strnstr(haystack, "abcd", 9));
-// }

@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/10 17:51:09 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:11:37 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:18:16 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
  * @param dstsize 
  * @return size_t The strcat() and strncat() functions return the pointer s1.
  */
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t			dst_length;
@@ -48,21 +49,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_length + x] = '\0';
 	return (dst_length + src_length);
 }
-
-// int	main()
-// {
-// 	size_t	size = 1000;
-// 	char	*str = malloc(size + 1);
-// 	char	*buff1 = malloc(size + 1);
-// 	char	*buff2 = malloc(size + 1);
-
-// 	*buff1 = 0;
-// 	*buff2 = '!';
-// 	memset(str, 'A', size - 50);
-// 	str[size] = 0;
-
-// 	strlcat(buff2, str, size);
-
-// 	printf("%s", buff2);
-// 	return (0);
-// }

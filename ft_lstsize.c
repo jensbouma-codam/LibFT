@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 16:01:57 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 16:11:43 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:40 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
  * @param lst The beginning of the list.
  * @return int The length of the list
  */
+
 int	ft_lstsize(t_list *lst)
 {
 	int		len;

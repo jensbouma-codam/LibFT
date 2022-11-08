@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 17:03:36 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 17:16:45 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:21 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,17 @@
  * @param del  The address of the function used to delete the content
  * of the node.
  */
+
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
+	t_list	*next;
+
+	if (!del)
+		return ;
 	while (*lst)
 	{
+		next = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		(*lst) = (*lst)->next;
+		(*lst) = next;
 	}
 }

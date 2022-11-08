@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/05 15:23:32 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:07:23 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 17:11:57 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,10 @@
  * @param len 
  * @return void* The memset() function returns its first argument.
  */
+
 void	*ft_memset(void *b, int c, size_t len)
 {	
 	while (len-- > 0)
-		((unsigned char *)b)[(len)] = (unsigned char) c;
+		((unsigned char *)b)[len] = (unsigned char) c;
 	return (b);
 }
