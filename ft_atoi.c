@@ -6,20 +6,11 @@
 /*   By: jbouma <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/07/21 11:54:09 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 22:59:06 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/08 11:25:19 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
-
-static int	protect_longint_ovfl(unsigned long long calc, int min)
-{
-	if (min == 1 && calc > LONG_MAX)
-		return (-1);
-	if (min == -1 && calc > LONG_MIN)
-		return (0);
-	return (calc * min);
-}
 
 /**
  * @brief  The atoi() function converts the initial portion of 
@@ -48,5 +39,5 @@ int	ft_atoi(char *str)
 		calc = calc * 10 + (*str - '0');
 		str++;
 	}
-	return (protect_longint_ovfl(calc, min));
+	return (calc * min);
 }

@@ -6,25 +6,23 @@
 #    By: jbouma <jbouma@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/10/10 14:09:40 by jbouma        #+#    #+#                  #
-#    Updated: 2022/10/21 22:54:50 by jbouma        ########   odam.nl          #
+#    Updated: 2022/11/08 11:34:07 by jbouma        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
-
-# Info:
-# https://makefiletutorial.com/#make-clean
 
 #	Output
 NAME 		= 	libft.a
 
-# Compiler Settings
+# Compiler setup
 CC 			= gcc
-CPPFLAGS	=
-CFLAGS 		= -Werror -Wall -Wextra -g3 -fsanitize=address
+FLAGS 		= -Werror -Wall -Wextra
 
 # Files to include
 INC			=	./libft.h
 
 OBJDIR		=	./obj/
+
+# Sources
 SRC			=	ft_isalpha.c	\
 				ft_isdigit.c	\
 				ft_isalnum.c	\
@@ -60,6 +58,7 @@ SRC			=	ft_isalpha.c	\
 				ft_putendl_fd.c	\
 				ft_putnbr_fd.c	\
 
+# Bonus Sources
 BONUSSRC	=	ft_lstnew.c			\
 				ft_lstadd_front.c	\
 				ft_lstsize.c		\
@@ -90,15 +89,15 @@ norm: $(SRC)$(BONUSSRC)
 	@norminette $^
 
 clean:
-	rm -r $(OBJDIR)
-	rm $(NAME)
+	@rm -rf $(OBJDIR)
+	@echo "Force removed $(OBJDIR)"
 
 fclean:
-	rm -rf $(OBJDIR)
-	rm -rf $(NAME)
+	@rm -rf $(OBJDIR)
+	@rm -rf $(NAME)
+	@echo "Force removed $(NAME) and $(OBJDIR)"
 
-re: fclean
-	@$(MAKE) all
+re: fclean all
 
 $(OBJDIR)%.o:%.c
 	@mkdir -p $(dir $@)
