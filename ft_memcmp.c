@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/10 20:49:56 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:11:47 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:33:49 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  * bytes (treated as unsigned char values, so that `\200' is greater than `\0',
  * for example).  Zero-length strings are always identical.
  */
-
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;

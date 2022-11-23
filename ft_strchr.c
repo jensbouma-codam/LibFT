@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 12:09:37 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:14:33 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:34:14 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  * @return char*  The functions strchr() and strrchr() return a pointer to the
  * located character, or NULL if the character does not appear in the string.
  */
-
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s && (char)*s != (unsigned char)c)

@@ -6,12 +6,11 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/19 22:52:52 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/10/21 23:28:21 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:38:56 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 /**
  * @brief Allocates (with malloc(3)) and returns a string
@@ -21,7 +20,6 @@
  * @param n	integer input 
  * @return char*  output in characters
  */
-
 static int	get_len(int n)
 {
 	int	len;

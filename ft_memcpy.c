@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/06 13:54:14 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:11:50 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:33:52 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * @param n 
  * @return void* The memcpy() function returns the original value of dst.
  */
-
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;

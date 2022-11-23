@@ -6,7 +6,7 @@
 #    By: jbouma <jbouma@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/10/10 14:09:40 by jbouma        #+#    #+#                  #
-#    Updated: 2022/11/08 11:59:34 by jbouma        ########   odam.nl          #
+#    Updated: 2022/11/21 17:45:56 by jbouma        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ INC			=	./libft.h
 OBJDIR		=	./obj/
 
 # Sources
-SRC			=	ft_isalpha.c	\
+BASE_SRC	=	ft_isalpha.c	\
 				ft_isdigit.c	\
 				ft_isalnum.c	\
 				ft_isascii.c	\
@@ -59,31 +59,32 @@ SRC			=	ft_isalpha.c	\
 				ft_putnbr_fd.c	\
 
 # Bonus Sources
-BONUSSRC	=	ft_lstnew.c			\
-				ft_lstadd_front.c	\
-				ft_lstsize.c		\
-				ft_lstlast.c		\
-				ft_lstadd_back.c	\
-				ft_lstdelone.c		\
-				ft_lstclear.c		\
-				ft_lstiter.c		\
-				ft_lstmap.c			\
+BONUSSRC	=	ft_lstnew_bonus.c		\
+				ft_lstadd_front_bonus.c	\
+				ft_lstsize_bonus.c		\
+				ft_lstlast_bonus.c		\
+				ft_lstadd_back_bonus.c	\
+				ft_lstdelone_bonus.c	\
+				ft_lstclear_bonus.c		\
+				ft_lstiter_bonus.c		\
+				ft_lstmap_bonus.c		\
+
+ifdef WITH_BONUS
+	SRC		= 	$(BASE_SRC) $(BONUSSRC)
+else
+	SRC		= 	$(BASE_SRC)
+endif
 
 OBJ			=	$(SRC:%.c=$(OBJDIR)%.o)
 
-BONUSOBJ 	=	$(BONUSSRC:%.c=$(OBJDIR)%.o)
-
 $(NAME): $(OBJ)
-	@echo "Updated $@"
 	@ar -rcs $@ $^
+	@echo "Update > $@"
 
-all: $(OBJ) $(BONUSOBJ)
-	@echo "Updated $(NAME)"
-	@ar -rcs $(NAME) $^
+all:
+	@$(MAKE) WITH_BONUS=1 $(NAME)
 
-bonus: $(BONUSOBJ)
-	@echo "Add Bonus to $(NAME)"
-	@ar -rcs $(NAME) $^
+bonus: all
 
 norm: $(SRC)$(BONUSSRC)
 	@norminette $^

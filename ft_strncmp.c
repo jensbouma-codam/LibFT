@@ -6,11 +6,11 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 13:17:43 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:20:03 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:14:50 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * @brief The strcmp() and strncmp() functions lexicographically compare
@@ -28,7 +28,6 @@
  * The comparison is done using unsigned characters,
  * so that `\200' is greater than `\0'.
  */
-
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

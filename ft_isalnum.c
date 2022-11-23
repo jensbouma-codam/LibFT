@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/05 14:49:34 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:10:53 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:33:05 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  * @return int The function returns zero if the character tests false
  * and returns non-zero if the character tests true.
  */
-
 int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));

@@ -6,12 +6,11 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 17:17:10 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:15:49 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:02:47 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 /**
  * @brief The strdup() function allocates sufficient memory for a copy of the
@@ -24,7 +23,6 @@
  * @param s1 
  * @return char* 
  */
-
 char	*ft_strdup(const char *s1)
 {
 	const size_t	length = ft_strlen(s1) + 1;

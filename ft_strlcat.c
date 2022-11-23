@@ -6,12 +6,11 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/10 17:51:09 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:18:16 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:15:39 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h" 
-#include <stdlib.h>
 
 /**
  * @brief The strcat() and strncat() functions append a copy of the
@@ -28,7 +27,6 @@
  * @param dstsize 
  * @return size_t The strcat() and strncat() functions return the pointer s1.
  */
-
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t			dst_length;

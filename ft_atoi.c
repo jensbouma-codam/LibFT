@@ -6,7 +6,7 @@
 /*   By: jbouma <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/07/21 11:54:09 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:10:46 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:32:54 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * @param str 
  * @return int 
  */
-
 int	ft_atoi(char *str)
 {
 	int				min;

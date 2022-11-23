@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/04 12:42:42 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:11:00 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:33:08 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * @return int The function returns zero if the character tests false
  * and returns non-zero if the character tests true.
  */
-
 int	ft_isalpha(int c)
 {
 	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));

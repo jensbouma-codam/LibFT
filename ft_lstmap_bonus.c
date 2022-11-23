@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstmap.c                                        :+:    :+:            */
+/*   ft_lstmap_bonus.c                                  :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 17:28:51 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:10:15 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:37:53 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 /**
  * @brief Iterates the list ’lst’ and applies the function
@@ -26,7 +25,6 @@
  * the content of a node if needed.
  * @return t_list* The new list. NULL if the allocation fails.
  */
-
 static t_list	*set_zero(void *buf, void (*del)(void *))
 {
 	del(buf);

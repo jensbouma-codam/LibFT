@@ -6,12 +6,11 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 14:02:45 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:20:29 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:14:34 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <stddef.h>
 
 /**
  * @brief 
@@ -25,7 +24,6 @@
  * @param len 		Max seach length
  * @return char*
  */
-
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*find;

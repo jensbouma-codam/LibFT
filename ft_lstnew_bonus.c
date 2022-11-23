@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/21 14:51:23 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:11:37 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:33:42 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  * @param content The content to create the node with.
  * @return t_list* The new node
  */
-
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;

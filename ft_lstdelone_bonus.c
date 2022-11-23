@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstadd_back.c                                   :+:    :+:            */
+/*   ft_lstdelone.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2022/10/21 16:19:54 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:26:18 by jbouma        ########   odam.nl         */
+/*   Created: 2022/10/21 16:56:29 by jbouma        #+#    #+#                 */
+/*   Updated: 2022/11/21 14:33:29 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
- * @brief Adds the node ’new’ at the end of the list.
+ * @brief Takes as a parameter a node and frees the memory of
+ * the node’s content using the function ’del’ given
+ * as a parameter and free the node.  The memory of
+ * ’next’ must not be freed.
  * 
- * @param lst The address of a pointer to the first link ofa list.
- * @param new The address of a pointer to the node to be added to the list.
+ * @param lst The node to free.
+ * @param del The address of the function used to delete
+ * the content.
  */
-
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!*lst)
-		*lst = new;
-	else
-		ft_lstlast(*lst)->next = new;
+	del(lst->content);
+	free(lst);
 }

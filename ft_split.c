@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/17 17:09:49 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:14:24 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:12:24 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  * @param c Character to split string
  * @return char**  Array of splited parts
  */
-
 static size_t	get_len(char const *s, char c)
 {
 	size_t	len;

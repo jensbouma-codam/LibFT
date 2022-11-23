@@ -6,12 +6,11 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 23:37:38 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:09:45 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:13:01 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 #include <limits.h>
 
 /**
@@ -21,7 +20,6 @@
  * @param n The integer to output.
  * @param fd The file descriptor on which to write.
  */
-
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == INT_MIN)

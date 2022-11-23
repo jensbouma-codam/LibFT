@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 12:52:24 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:20:55 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:34:43 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * @param c 
  * @return char* 
  */
-
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*buf;

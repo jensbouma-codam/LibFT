@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 22:20:20 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:19:39 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:34:34 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  * @return char* The string created from the successive applications
  * of ’f’. Returns NULL if the allocation fails.
  */
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;

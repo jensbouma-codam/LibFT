@@ -6,11 +6,9 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 22:20:20 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:17:28 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:16:04 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /**
  * @brief Applies the function ’f’ on each character of
@@ -21,7 +19,6 @@
  * @param s The string on which to iterate.
  * @param f The function to apply to each character.
  */
-
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	int		i;

@@ -6,12 +6,12 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/16 17:00:12 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:10:50 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:39:14 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
-#include "libft.h" 
 
 /**
  * @brief The calloc() function contiguously allocates enough space for
@@ -23,7 +23,6 @@
  * @return void* If successful, calloc() return a pointer to allocated memory.
  * If there is an error, they return a NULL pointer and set errno to ENOMEM.
  */
-
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;

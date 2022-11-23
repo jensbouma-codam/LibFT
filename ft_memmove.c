@@ -6,12 +6,11 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/06 14:34:17 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:11:53 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:37:07 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 /**
  * @brief The memmove() function copies len bytes from string src to string dst.
@@ -23,7 +22,6 @@
  * @param len 
  * @return void* The memmove() function returns the original value of dst.
  */
-
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	if (!dst && !src)

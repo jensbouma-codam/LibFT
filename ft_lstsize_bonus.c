@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstdelone.c                                     :+:    :+:            */
+/*   ft_lstsize.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2022/10/21 16:56:29 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:11:25 by jbouma        ########   odam.nl         */
+/*   Created: 2022/10/21 16:01:57 by jbouma        #+#    #+#                 */
+/*   Updated: 2022/11/21 14:33:44 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 /**
- * @brief Takes as a parameter a node and frees the memory of
- * the node’s content using the function ’del’ given
- * as a parameter and free the node.  The memory of
- * ’next’ must not be freed.
+ * @brief Counts the number of nodes in a list.
  * 
- * @param lst The node to free.
- * @param del The address of the function used to delete
- * the content.
+ * @param lst The beginning of the list.
+ * @return int The length of the list
  */
-
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
+int	ft_lstsize(t_list *lst)
 {
-	del(lst->content);
-	free(lst);
+	int		len;
+
+	len = 0;
+	while (lst && ++len)
+		lst = lst->next;
+	return (len);
 }

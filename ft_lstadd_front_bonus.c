@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_memset.c                                        :+:    :+:            */
+/*   ft_lstadd_front_bonus.c                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2022/10/05 15:23:32 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/21 15:14:02 by jbouma        ########   odam.nl         */
+/*   Created: 2022/10/21 15:27:43 by jbouma        #+#    #+#                 */
+/*   Updated: 2022/11/21 15:38:38 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 /**
- * @brief The memset() function writes len bytes of value c (converted
- * to an unsigned char) to the string b.
-
+ * @brief Adds the node ’new’ at the beginning of the list.
  * 
- * @param b 
- * @param c 
- * @param len 
- * @return void* The memset() function returns its first argument.
+ * @param lst The address of a pointer to the first link of
+ * a list.
+ * @param new The address of a pointer to the node to be
+ * added to the list.
  */
-void	*ft_memset(void *b, int c, size_t len)
-{	
-	while (len-- > 0)
-		((unsigned char *)b)[len] = (unsigned char) c;
-	return (b);
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	new->next = *lst;
+	*lst = new;
 }

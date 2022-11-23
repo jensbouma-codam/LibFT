@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/10 12:13:34 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:22:42 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 14:34:54 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * function returns the corresponding upper-case letter if there is one;
  * otherwise, the argument is returned unchanged.
  */
-
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

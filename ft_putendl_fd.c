@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 23:25:41 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/08 17:12:17 by jbouma        ########   odam.nl         */
+/*   Updated: 2022/11/21 15:16:49 by jbouma        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * @param s The string to output.
  * @param fd The file descriptor on which to write.
  */
-
 void	ft_putendl_fd(char *s, int fd)
 {
 	write(fd, (char *)s, ft_strlen(s));
