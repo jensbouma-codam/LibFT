@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/26 19:18:22 by jbouma        #+#    #+#                 */
-/*   Updated: 2023/04/22 15:00:36 by jensbouma     ########   odam.nl         */
+/*   Updated: 2023/04/22 15:04:16 by jensbouma     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <limits.h>
-#include <sys/file.h>
+#include <stdio.h>
 
 static char	*set_buffer_and_line(char *buffer, char *line)
 {
@@ -54,10 +54,10 @@ static char	*set_buffer_and_line(char *buffer, char *line)
  */
 char	*get_next_line(int fd)
 {
-	static char	buffer[OPEN_MAX][BUFFER_SIZE + 1];
+	static char	buffer[FOPEN_MAX][BUFFER_SIZE + 1];
 	char		*line;
 
-	if (fd > OPEN_MAX || fd < 0 || BUFFER_SIZE < 1)
+	if (fd > FOPEN_MAX || fd < 0 || BUFFER_SIZE < 1)
 		return (NULL);
 	if (read(fd, NULL, 0) == -1)
 		return (ret_empty(buffer[fd]));
