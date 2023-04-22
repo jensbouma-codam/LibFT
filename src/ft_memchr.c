@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/10 20:24:40 by jbouma        #+#    #+#                 */
-/*   Updated: 2022/11/21 14:33:47 by jbouma        ########   odam.nl         */
+/*   Updated: 2023/04/22 14:46:19 by jensbouma     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (p < n)
 	{
 		if (((const unsigned char *)s)[p] == (unsigned char)c)
-			return ((void *)&s[p]);
+			return ((void *)s + p);
 		p++;
 	}
 	return (0);
