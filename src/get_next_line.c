@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/26 19:18:22 by jbouma        #+#    #+#                 */
-/*   Updated: 2023/04/22 14:20:36 by jensbouma     ########   odam.nl         */
+/*   Updated: 2023/04/22 15:00:36 by jensbouma     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <sys/file.h>
 
 static char	*set_buffer_and_line(char *buffer, char *line)
 {
