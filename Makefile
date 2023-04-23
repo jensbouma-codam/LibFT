@@ -6,7 +6,7 @@
 #    By: jbouma <jbouma@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/10/10 14:09:40 by jbouma        #+#    #+#                  #
-#    Updated: 2023/04/22 14:33:42 by jensbouma     ########   odam.nl          #
+#    Updated: 2023/04/23 15:49:49 by jbouma        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,11 +86,11 @@ all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	@ar -rcs $(NAME) $^
-	@echo "$@ Created"
+	@printf "Libary \t\t$(NAME) \033[0K\r\n"
 
 $(BUILDDIR)%.o:%.c
 	@mkdir -p ./build
-	@echo "Building... $(notdir $<)"
+	@printf "Build \t\t$(notdir $<) \033[0K\r" ||  printf "Build \t\t$(notdir $<) \033[0K\r"
 	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) $(INC) -c $< -o $@ 
 

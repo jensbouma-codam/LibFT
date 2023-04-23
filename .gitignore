@@ -1,5 +1,6 @@
 .DS_Store
 /.vscode
-/obj
-libft.a
-a.out*
+*.o
+*.a
+/build
+/bin
