@@ -6,7 +6,7 @@
 /*   By: jbouma <jbouma@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/04 13:39:41 by jbouma        #+#    #+#                 */
-/*   Updated: 2023/05/12 22:33:33 by jensbouma     ########   odam.nl         */
+/*   Updated: 2023/05/13 13:52:34 by jensbouma     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
-int	process_int(char c, int n);
+int		process_int(char c, int n);
 int		process_char(char c, char *str);
 int		ft_printf(const char *s, ...);
 char	*ft_itoa(int n);
