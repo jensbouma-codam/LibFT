@@ -6,7 +6,7 @@
 #    By: jbouma <jbouma@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/10/10 14:09:40 by jbouma        #+#    #+#                  #
-#    Updated: 2023/04/23 15:51:44 by jbouma        ########   odam.nl          #
+#    Updated: 2023/05/15 21:31:27 by jensbouma     ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,14 +83,14 @@ SOURCES		=	${addprefix $(SRCDIR)/, $(FILES)}
 OBJECTS		= $(SOURCES:%.c=$(BUILDDIR)%.o)
 
 all: $(NAME)
-	@printf "Libary \t\t$(NAME) \033[0K\r\n"
+	@printf "%-25.25s%s\n" "Libary" "$(NAME)"
 
 $(NAME): $(OBJECTS)
 	@ar -rcs $(NAME) $^
 
 $(BUILDDIR)%.o:%.c
 	@mkdir -p ./build
-	@printf "Build \t\t$(notdir $<) \033[0K\r" ||  printf "Build \t\t$(notdir $<) \033[0K\r"
+	@printf "%-25.25s%s\n" "Build" "$(notdir $<)"
 	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) $(INC) -c $< -o $@ 
 
