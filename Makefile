@@ -6,7 +6,7 @@
 #    By: jbouma <jbouma@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/10/10 14:09:40 by jbouma        #+#    #+#                  #
-#    Updated: 2023/05/15 21:31:27 by jensbouma     ########   odam.nl          #
+#    Updated: 2023/05/16 15:53:26 by jbouma        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ INC			=	-I include
 
 # Set source and build directories
 SRCDIR		= src
-BUILDDIR	= ./build/
+BUILDDIR	= build/
 
 # FILES		= $(notdir $(shell find $(SRCDIR) -type f -name *.c))
 FILES		=	ft_atoi.c				\
@@ -89,7 +89,7 @@ $(NAME): $(OBJECTS)
 	@ar -rcs $(NAME) $^
 
 $(BUILDDIR)%.o:%.c
-	@mkdir -p ./build
+	@mkdir -p build
 	@printf "%-25.25s%s\n" "Build" "$(notdir $<)"
 	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) $(INC) -c $< -o $@ 
